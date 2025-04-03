@@ -61,6 +61,8 @@ int	parse_rgb_values(char *str, int *rgb)
 	char	**parts;
 	int		i;
 
+	if (!is_valid_rgb_format(str))
+		return (0);
 	parts = ft_split(str, ',');
 	if (!parts)
 		return (0);

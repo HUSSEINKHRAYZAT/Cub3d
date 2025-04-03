@@ -178,6 +178,7 @@ char	*extract_path_from_list(t_list *list, int index, int skip_chars);
 int		*extract_color_from_list(t_list *list, int index);
 int		close_window(t_tools *data);
 int		count_double_ptr(char **ptr);
+int		is_valid_rgb_format(char *str);
 int		find_player(t_tools *data);
 int		game_loop(t_tools *data);
 int		init_player(t_tools *data);
